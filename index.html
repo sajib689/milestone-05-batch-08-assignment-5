@@ -4,8 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Summer Sale</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        .font{
+            font-family: "Work Sans", sans-serif;
+        }
+    </style>
 </head>
-<body>
-    
+<body class="font">
+    <!-- header area -->
+    <header>
+        <div class="hero min-h-screen bg-[#F9F6E2]">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+              <img src="./Images/Summer 1.png" class="w-[600px] rounded-lg" />
+              <div>
+                <h1 class="text-xl font-semibold">---SALE FEVER---</h1>
+                <p class="text-5xl my-10 font-bold">Purchase $ 200 or <br>
+                    above & get <span class="text-[#F11A7B]">20% off</span></p>
+                   <p class="font-semibold">
+                    Use Promo Code <button class="bg-[#F11A7B] text-white px-2 rounded-md mx-2">SELL 200</button>
+                   </p>
+              </div>
+            </div>
+          </div>
+    </header>
+    <!-- header area end from here -->
+    <!-- main section start -->
+    <main class=" m-[100px]">
+        <section>
+            <h1 class="text-4xl font-bold ml-4 pt-20">Kitchenware</h1>
+            <div>
+                <!-- card 01 -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="./Images/Kitchenware/chopping-boat.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="text-2xl font-bold">K. Accessories</h2>
+                      <p class="text-slate-500">$ 39.00</p>
+                      <div class="card-actions">
+                        <button class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+    </main>
+    <!-- main section end from here -->
 </body>
 </html>
