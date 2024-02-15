@@ -20,6 +20,26 @@ for (var index = 0; index < cards.length; index++) {
         const totalPrice = parseFloat(card.querySelector('h3').innerText.split(" ")[1])
         totalAmountElement.innerText =  sum += totalPrice
         
-        
     })
 }
+
+// get the discount price element
+document.getElementById('apply-btn').addEventListener('click', function(){
+    const discountValueElement = document.getElementById('input-field').value
+    if(sum >= 200){
+        if(discountValueElement === 'SELL200'){
+            const discountElement = document.getElementById('discountPrice')
+            const discountPrice = sum * 0.20
+            discountElement.innerText = discountPrice.toFixed(2)
+            document.getElementById('input-field').value = ''
+            // get the total after the discount
+            const total = document.getElementById('total')
+            sum -= discountPrice
+            total.innerText = sum.toFixed(2)
+        } else {
+            alert('Please enter the valid discount promo code')
+        }
+    } else{
+        alert('Please by at least $200')
+    }
+})
